@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.newsletter-container {
+    background: linear-gradient(90deg, #CECECE, #C7C7C7);
+    padding: 20px 40px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 50px 200px;
+}
+
+.newsletter-content {
+    flex: 1;
+}
+
+.newsletter-content h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: black;
+}
+
+.newsletter-content p {
+    font-size: 16px;
+    color: #333;
+    margin-top: 10px;
+}
+
+.newsletter-form {
+    display: flex;
+    align-items: center;
+}
+
+.newsletter-form input {
+    padding: 10px;
+    border-radius: 5px 0 0 5px;
+    border: none;
+    outline: none;
+    width: 250px;
+    font-size: 16px;
+}
+
+.newsletter-form button {
+    background-color: #070056;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+}
+
+.newsletter-form button:hover {
+    background-color: #555;
+}
+
+.newsletter-form .checkmark {
+    margin-left: 10px;
+    color: #f5a623;
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30px;
+}

@@ -1,0 +1,90 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Estilo da navegação */
+header {
+    background-color: #333;
+    padding: 15px;
+}
+
+header ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+}
+
+header ul li {
+    margin: 0 20px;
+}
+
+header ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Círculo do menu */
+.circle {
+    width: 25px;
+    height: 25px;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Menu flutuante */
+.floating-menu {
+    position: absolute;
+    width: 220px;
+    top: 60px;
+    right: 20px;
+    background-color: #222;
+    color: white;
+    border-radius: 8px;
+    padding: 10px;
+    display: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo do menu flutuante atualizado */
+.floating-menu ul {
+    list-style: none;
+    padding: 0;
+}
+
+.floating-menu ul li {
+    margin: 10px 0;
+}
+
+.floating-menu ul li a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.floating-menu ul li .menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-item .icon {
+    margin-right: 5px; /* Espaço entre o ícone e o texto */
+}
+
+.menu-item .arrow {
+    margin-left: auto; /* Garante que a seta fique à direita */
+}

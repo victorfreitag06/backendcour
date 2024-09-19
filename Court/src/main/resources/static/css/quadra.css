@@ -1,0 +1,93 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    width: 90%; /* Define a largura da div container como 90% da página */
+    margin: 0 auto; /* Centraliza a div container horizontalmente */
+    height: 100vh;
+    padding: 20px;
+    margin-top: 70px;
+}
+
+.image-section img{
+    height: 500px;
+}
+.image-section {
+    flex: 0 0 60%; /* A image-section continua ocupando 60% da largura do container */
+    text-align: center;
+
+}
+
+.main-image {
+    width: 100%;
+    max-width: 80%; /* Garante que a imagem ocupe toda a largura da div */
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.thumbnails {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.thumbnails img{
+    width: 70px;
+    height: 70px;
+}
+
+.thumbnail {
+    width: 100px;
+    height: 100px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.info-section {
+    flex: 0 0 40%; /* A info-section continua ocupando 40% da largura do container */
+    padding-left: 20px;
+    align-items: start;
+}
+
+h1 {
+    font-size: 40px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.reservar {
+    background-color: #4a5fd8;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 160px;
+    height: 50px;
+    width: 500px;
+}
+
+button:hover {
+    background-color: #3b4bb1;
+}

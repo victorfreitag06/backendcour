@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/login.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> <!-- Inclusão do jQuery -->
+    <style>
+        /* Estilo do modal de sucesso */
+        #successModal, #errorModal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            /* Flexbox para centralizar o conteúdo */
+        }
+
+        #successModal .modal-content, #errorModal .modal-content {
+            background-color: #f0f8ff; /* Tom de azul claro */
+            padding: 30px;
+            border-radius: 12px;
+            text-align: center;
+            width: 350px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        #successModal h2 {
+            color: #007bff; /* Azul principal */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #successModal p {
+            color: #333;
+            font-size: 18px;
+        }
+
+        /* Estilo do modal de erro */
+        #errorModal .modal-content {
+            background-color: #fff4f4; /* Tom de vermelho claro */
+            border: 2px solid #f44336; /* Vermelho para erro */
+        }
+
+        #errorModal h2 {
+            color: #f44336; /* Vermelho para erro */
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        #errorModal p {
+            color: #333;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo-section">
+            <img src="https://via.placeholder.com/150" alt="Logo">
+            <div class="shapes">
+                <div class="shape1"></div>
+                <div class="shape2"></div>
+                <div class="shape3"></div>
+                <div class="shape4"></div>
+            </div>
+        </div>
+        <div class="login-form">
+            <h2>Login de Membro</h2>
+            <input type="text" id="loginEmail" placeholder="Usuário" required>
+            <input type="password" id="loginSenha" placeholder="Senha" required>
+            <button id="loginBtn">LOGIN</button>
+            <div class="forcad">
+                <div class="forgot-password">
+                    <a href="cadastro.html">Cadastre-se</a>
+                </div>
+                <div class="forgot-password">
+                    <a href="#">Esqueci minha senha</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal de sucesso -->
+    <div id="successModal">
+        <div class="modal-content">
+            <h2>Login efetuado com sucesso!</h2>
+            <p>Você será redirecionado para a página inicial em breve.</p>
+        </div>
+    </div>
+
+    <!-- Modal de erro -->
+    <div id="errorModal">
+        <div class="modal-content">
+            <h2>Erro de Login</h2>
+            <p>Usuário ou senha incorretos. Tente novamente.</p>
+        </div>
+    </div>
+
+    <script>
+        $(document).ready(function() {
+            $('#loginBtn').click(function(event) {
+                event.preventDefault(); // Prevenir o comportamento padrão do botão
+
+                // Capturar os dados do formulário de login
+                const email = $('#loginEmail').val();
+                const senha = $('#loginSenha').val();
+
+                // Recuperar as credenciais do localStorage
+                const storedEmail = localStorage.getItem('email');
+                const storedSenha = localStorage.getItem('senha');
+
+                // Verificar se é o administrador
+                if (email === 'ADM' && senha === '123') {
+                    $('#successModal').fadeIn(); // Mostrar modal de sucesso
+                    setTimeout(function() {
+                        $('#successModal').fadeOut(); // Ocultar modal de sucesso
+                        window.location.href = 'principal.html'; // Redireciona para a página principal
+                    }, 3000);
+                }
+                // Verificar as credenciais armazenadas no localStorage
+                else if (email === storedEmail && senha === storedSenha) {
+                    $('#successModal').fadeIn(); // Mostrar modal de sucesso
+                    setTimeout(function() {
+                        $('#successModal').fadeOut(); // Ocultar modal de sucesso
+                        window.location.href = 'index.html'; // Redireciona para a página principal
+                    }, 3000);
+                } else {
+                    $('#errorModal').fadeIn(); // Mostrar modal de erro
+                    setTimeout(function() {
+                        $('#errorModal').fadeOut(); // Ocultar modal de erro
+                    }, 3000);
+                }
+            });
+        });
+    </script>
+</body>
+</html>

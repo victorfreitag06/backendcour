@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="css/segunda.css">
+    <link rel="stylesheet" href="css/projects.css">
+    <link rel="stylesheet" href="css/rodape.css">
+    <link rel="stylesheet" href="css/duvidas.css">
+    <link rel="stylesheet" href="css/flutuante.css">
+    <script src="js/opcao.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>Início</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="images/Logo-removebg-preview.png" alt="">
+        </div>
+        <div class="menu">
+            <ul class="menu">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="#espaços">Ambientes</a></li>
+                <li><a href="agendamento.html">Agendamento</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+				<li><a href="login.html">Login</a></li>
+            </ul>
+            <div id="menu-circle" class="circle"></div>
+            <!-- Menu flutuante -->
+            <div id="floating-menu" class="floating-menu">
+                <ul>
+                    <li>
+                        <a href="#">
+                            <div class="menu-item">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-globe" viewBox="0 0 16 16">
+                                        <path
+                                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+                                    </svg>
+                                </span>
+                                <span>Idioma</span>
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <div class="menu-item">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-moon" viewBox="0 0 16 16">
+                                        <path
+                                            d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286" />
+                                    </svg>
+                                </span>
+                                <span>Tema Escuro</span>
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor"
+                                        class="bi bi-toggle-off" viewBox="0 0 16 16">
+                                        <path
+                                            d="M11 4a4 4 0 0 1 0 8H8a5 5 0 0 0 2-4 5 5 0 0 0-2-4zm-6 8a4 4 0 1 1 0-8 4 4 0 0 1 0 8M0 8a5 5 0 0 0 5 5h6a5 5 0 0 0 0-10H5a5 5 0 0 0-5 5" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="historico.html">
+                            <div class="menu-item">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-clock-history" viewBox="0 0 16 16">
+                                        <path
+                                            d="M8.515 1.019A7 7 0 0 0 8 1V0a8 8 0 0 1 .589.022zm2.004.45a7 7 0 0 0-.985-.299l.219-.976q.576.129 1.126.342zm1.37.71a7 7 0 0 0-.439-.27l.493-.87a8 8 0 0 1 .979.654l-.615.789a7 7 0 0 0-.418-.302zm1.834 1.79a7 7 0 0 0-.653-.796l.724-.69q.406.429.747.91zm.744 1.352a7 7 0 0 0-.214-.468l.893-.45a8 8 0 0 1 .45 1.088l-.95.313a7 7 0 0 0-.179-.483m.53 2.507a7 7 0 0 0-.1-1.025l.985-.17q.1.58.116 1.17zm-.131 1.538q.05-.254.081-.51l.993.123a8 8 0 0 1-.23 1.155l-.964-.267q.069-.247.12-.501m-.952 2.379q.276-.436.486-.908l.914.405q-.24.54-.555 1.038zm-.964 1.205q.183-.183.35-.378l.758.653a8 8 0 0 1-.401.432z" />
+                                        <path d="M8 1a7 7 0 1 0 4.95 11.95l.707.707A8.001 8.001 0 1 1 8 0z" />
+                                        <path
+                                            d="M7.5 3a.5.5 0 0 1 .5.5v5.21l3.248 1.856a.5.5 0 0 1-.496.868l-3.5-2A.5.5 0 0 1 7 9V3.5a.5.5 0 0 1 .5-.5" />
+                                    </svg>
+                                </span>
+                                <span>Histórico</span>
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <div class="menu-item">
+                                <span class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-door-open" viewBox="0 0 16 16">
+                                        <path d="M8.5 10c-.276 0-.5-.448-.5-1s.224-1 .5-1 .5.448.5 1-.224 1-.5 1" />
+                                        <path
+                                            d="M10.828.122A.5.5 0 0 1 11 .5V1h.5A1.5 1.5 0 0 1 13 2.5V15h1.5a.5.5 0 0 1 0 1h-13a.5.5 0 0 1 0-1H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117M11.5 2H11v13h1V2.5a.5.5 0 0 0-.5-.5M4 1.934V15h6V1.077z" />
+                                    </svg>
+                                </span>
+                                <span>Entrar</span>
+                                <span class="arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                        class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd"
+                                            d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                                    </svg>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    <section class="primeira">
+        <img src="images/banner.jpg"segunda">
+        <div class="quadras">
+            <h1>Seleção de Quadras</h1>
+        </div>
+    </section>
+    <div id="espaços" class="selection-container">
+        <h2>Uma seleção de quadras perto de você</h2>
+        <div class="selection-menu">
+            <button class="option active">Ambientes</button>
+            <button id="btn-ambientes" class="option" onclick="showCards('aulas')">Aulas</button>
+            <button class="option">Acessórios</button>
+        </div>
+    </div>
+<section class="projects">
+    <h2 class="title-proj-mob">Projects</h2>
+    <div class="card">
+    <img src="images/beach.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">BEACH TENNIS | VÔLEI DE AREIA</span>
+        <h5 class="card-title">QUADRA DE AREIA</h5>
+        <p class="description">Quadra de areia com rede e suporte para jogar Beach Tennis e Vôlei de Areia</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="images/campo.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTEBOL | RUGBY</span>
+        <h5 class="card-title">Campo de grama</h5>
+        <p class="description">Campo de futebol de tamanho profissional para jogar futebol ou rugby</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra2.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="images/ginasio.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">Ginásio</h5>
+        <p class="description">Ginásio esportivo e com arquibacanda para jogar diversos esportes</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra3.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="images/society.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTEBOL</span>
+        <h5 class="card-title">Society</h5>
+        <p class="description">Quadra com grama sintética e tamanho grande para jogar futebol</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra4.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="images/quadrafechada.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">Quadra fechada</h5>
+        <p class="description">Quadra fechada ao livre para jogar esportes como futsal, basquete e vôlei</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra5.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+<div class="card">
+    <img src="images/quadraaberta.jpg" alt="Imagem do Card" class="card-image">
+    <div class="card-body">
+        <span class="badge">FUTSAL | VÔLEI | BASQUETE</span>
+        <h5 class="card-title">Quadra aberta</h5>
+        <p class="description">Quadra aberta ao ar livre para jogar esportes como futsal, basquete e vôlei</p>
+        <br>
+        <div class="btn-group">
+            <div class="btn-card"><a href="quadra6.html">Agende Aqui</a></div>
+        </div>
+    </div>
+</div>
+</section>
+<section class="container"></section>
+    <div class="faq-section">
+        <div class="faq-list">
+            <h2>DÚVIDAS FREQUENTES</h2>
+            <p>Veja aqui as respostas para as dúvidas mais frequentes sobre nossos produtos.</p>
+
+            <div class="faq-item">
+                <span>Posso comprar diretamente com a Court?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Onde encontro os produtos Court?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Como acionar Assistência técnica Court?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+            <div class="faq-item">
+                <span>Onde encontro peças de reposição dos equipamentos Court?</span>
+                <i class="arrow">&#x25BC;</i>
+            </div>
+        </div>
+
+       <style>
+        /* Estilo básico para o modal */
+        .modal {
+            display: none; /* Esconde o modal por padrão */
+            position: fixed;
+            z-index: 1;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+
+        .modal-content {
+            background-color: #fff;
+            margin: 15% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 50%;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        .close:hover, .close:focus {
+            color: black;
+        }
+
+        #closeModalBtn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        #closeModalBtn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-section">
+        <h3>Não solucionou sua dúvida?</h3>
+        <form id="emailForm">
+            <input type="text" name="name" placeholder="Nome*" required>
+            <input type="email" name="email" placeholder="E-mail*" required>
+            <select name="assunto" required>
+                <option value="" disabled selected>Assunto</option>
+                <option value="duvida">Dúvida</option>
+                <option value="suporte">Suporte Técnico</option>
+            </select>
+            <textarea name="mensagem" rows="5" placeholder="Mensagem*" required></textarea>
+            <label>
+                <input type="checkbox" name="newsletter">
+                Aceito me cadastrar na Court
+            </label>
+            <button class="btn" type="submit">Enviar</button>
+        </form>
+    </div>
+
+    <!-- Modal de sucesso -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Mensagem enviada com sucesso!</h2>
+            <p>Obrigado por entrar em contato conosco. Responderemos o mais breve possível.</p>
+            <button id="closeModalBtn">Fechar</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do formulário
+            
+            // Mostra o modal
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+        });
+
+        // Fecha o modal quando o usuário clica no botão de fechar (X)
+        document.querySelector('.close').addEventListener('click', function() {
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        });
+
+        // Fecha o modal quando o usuário clica no botão "Fechar"
+        document.getElementById('closeModalBtn').addEventListener('click', function() {
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        });
+
+        // Fecha o modal se o usuário clicar fora da área do modal
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('successModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+    </script>
+    </div>
+</section>
+<footer>
+    <div class="container-footer">
+        <div class="row-footer">
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Empresa</h4>
+                <ul>
+                    <li><a href="sobre.html"> Quem somos </a></li>
+                    <li><a href=""> nossos serviços </a></li>
+                    <li><a href=""> política de privacidade </a></li>
+                    <li><a href=""> programa de afiliados</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Obter ajuda</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">Transporte</a></li>
+                    <li><a href="#">devoluções</a></li>
+                    <li><a href="#">Status De Pedido</a></li>
+                    <li><a href="#">Opções De Pagamento</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Loja online</h4>
+                <ul>
+                    <li><a href="#">Relógio</a></li>
+                    <li><a href="#">Saco</a></li>
+                    <li><a href="#">Calçado</a></li>
+                    <li><a href="#">Endereço</a></li>
+                </ul>
+            </div>
+            <!--end footer col-->
+            <!-- footer col-->
+            <div class="footer-col">
+                <h4>Enviar Email</h4>
+                <!DOCTYPE html>
+                <html>
+                <head>
+                    <title>Enviar E-mail</title>
+                </head>
+                <body>
+<div class="form-sub">
+    <form id="emailForm">
+        <input type="email" id="email" name="email" placeholder="Digite o seu e-mail" required>
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+<!-- Modal de Sucesso -->
+<div id="successModal" class="modal">
+    <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2>Sucesso!</h2>
+        <p>O e-mail foi enviado com sucesso.</p>
+        <button id="closeModalBtn">Fechar</button>
+    </div>
+</div>
+<style>
+    /* Estilos do Modal */
+    .modal {
+        display: none; /* Oculta o modal por padrão */
+        position: fixed;
+        z-index: 1;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+        background-color: rgba(0,0,0,0.4); /* Cor de fundo com opacidade */
+    }
+    
+    /* Conteúdo do Modal */
+    .modal-content {
+        background-color: white;
+        margin: 15% auto;
+        padding: 20px;
+        border: 1px solid rgb(0, 128, 0);
+        width: 80%;
+        max-width: 500px;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .modal-content p{
+        color: black;
+        margin: 15px;
+    }
+    
+    /* Botão de Fechar */
+    .close {
+        color: rgb(0, 128, 0);
+        float: right;
+        font-size: 28px;
+        font-weight: bold;
+    }
+    
+    .close:hover,
+    .close:focus {
+        color: black;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    
+    /* Botão Fechar do Modal */
+    #closeModalBtn {
+        background-color: rgb(0, 128, 0); /* Cor de fundo do botão */
+        border: none;
+        color: rgb(0, 1, 64);
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin-top: 10px;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+    
+    #closeModalBtn:hover {
+        background-color: rgb(0, 128, 0); /* Cor de fundo ao passar o mouse */
+    }
+    </style>
+    
+    <script>
+        document.getElementById('emailForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Previne o comportamento padrão do formulário
+        
+            // Mostra o modal
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'block';
+        });
+        
+        // Fecha o modal quando o usuário clica no botão de fechar (X)
+        document.querySelector('.close').addEventListener('click', function() {
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        });
+        
+        // Fecha o modal quando o usuário clica no botão "Fechar"
+        document.getElementById('closeModalBtn').addEventListener('click', function() {
+            var modal = document.getElementById('successModal');
+            modal.style.display = 'none';
+        });
+        
+        // Fecha o modal se o usuário clicar fora da área do modal
+        window.addEventListener('click', function(event) {
+            var modal = document.getElementById('successModal');
+            if (event.target === modal) {
+                modal.style.display = 'none';
+            }
+        });
+        </script>
+        
+                        
+                    
+                </body>
+                </html>
+                
+
+
+                <div class="medias-socias">
+                    <a href="#"> <i class="fa fa-facebook"></i> </a>
+                    <a href="#"> <i class="fa fa-instagram"></i> </a>
+                    <a href="#"> <i class="fa fa-twitter"></i> </a>
+                    <a href="#"> <i class="fa fa-linkedin"></i> </a>
+                </div>
+                
+            </div>
+            <!--end footer col-->
+        </div>
+    </div>
+</footer>
+</body>
+</html>
